@@ -9,6 +9,15 @@ $(function() {
       gutter: 0
     });
   });
+
+  $('a.select-tag').click(function() {
+    $('a.select-tag').css ({
+      "background": "none"
+    });
+    $(this).css({
+      "background": "#00f"
+    });
+  });
 });
 
 function filterTag(tag) {
