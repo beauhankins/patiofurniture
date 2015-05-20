@@ -19,62 +19,35 @@
   </head>
   <body>
     <header id='header'>
-      <div class='logo'></div>
+      <a href='/'>
+        <div class='logo'></div>
+      </a>
     </header>
-    <section id='body-test'>
+    <section id='intro'>
       <div class='inner-container-thin'>
         <h1>What is this</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nihil animi vero autem quia facere doloribus.
-          <a href='http://beauhankins.com' target='_newtab'>beauhankins.com</a>
-        </p>
+          Patio Furniture is a project by
+          <a href='http://beauhankins.com' target='_newtab'>Beau Hankins</a><span>. It is currently a visual art diary of miscellaneous experiments.</span></p>
         <br>
         <h1>Filter by Tag</h1>
         <p>
-          <a href='javascript:void(0)'>Aberhausen Ltd</a>
+          <a href='#all' onclick="filterTag('all');return false;">All</a>
           ,
-          <a href='javascript:void(0)'>Cavel Mountain Engineering</a>
+          <a href='#experiments' onclick="filterTag('experiments');return false;">Experiments</a>
           ,
-          <a href='javascript:void(0)'>Firestone 2014</a>
-          ,
-          <a href='javascript:void(0)'>Heathsmith Tailors</a>
-          ,
-          <a href='javascript:void(0)'>Loaves & Diamond</a>
-          ,
-          <a href='javascript:void(0)'>Norse</a>
-          ,
-          <a href='javascript:void(0)'>Pistol & Quilt</a>
-          ,
-          <a href='javascript:void(0)'>The WoodHill Supply</a>
+          <a href='#patio-furniture' onclick="filterTag('patio-furniture');return false;">Patio Furniture</a>
         </p>
       </div>
     </section>
     <section id='image-grid'>
       <div class='inner-container'>
         <div class='masonry js-masonry' id='grid'>
-          <div class='grid-item'>
-            <img src='http://placehold.it/187x298'>
+          <div class='grid-item tag-experiments'>
+            <img src="images/in-frequency.png" />
           </div>
-          <div class='grid-item'>
-            <img src='http://placehold.it/700x400'>
-          </div>
-          <div class='grid-item'>
-            <img src='http://placehold.it/300x300'>
-          </div>
-          <div class='grid-item'>
-            <img src='http://placehold.it/150x100'>
-          </div>
-          <div class='grid-item'>
-            <img src='http://placehold.it/187x238'>
-          </div>
-          <div class='grid-item'>
-            <img src='http://placehold.it/500x400'>
-          </div>
-          <div class='grid-item'>
-            <img src='http://placehold.it/400x400'>
-          </div>
-          <div class='grid-item'>
-            <img src='http://placehold.it/200x150'>
+          <div class='grid-item tag-patio-furniture'>
+            <img src="images/pflogo-process.png" />
           </div>
         </div>
       </div>
