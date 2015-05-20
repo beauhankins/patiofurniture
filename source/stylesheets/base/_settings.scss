@@ -1,0 +1,58 @@
+// Typography
+
+$font-family:             "Arial", "Helvetica", sans-serif;
+$font-family-body:        $font-family;
+$font-family-headings:    $font-family;
+
+// Colours
+
+$black:                     #111111;
+$white:                     #FFFFFF;
+$gray-lighter:              darken($white, 10%);
+$gray-light:                darken($white, 20%);
+$gray:                      darken($white, 40%);
+$gray-dark:                 darken($white, 60%);
+$gray-darker:               darken($white, 80%);
+
+$color-primary:             #dc1928;
+$color-primary-light:       lighten($color-primary, 30%);
+$color-primary-dark:        darken($color-primary, 30%);
+
+$color-secondary:             #5e514d;
+$color-secondary-light:       lighten($color-secondary, 30%);
+$color-secondary-dark:        darken($color-secondary, 10%);
+
+$color-shade:               $color-secondary;
+
+// Fonts
+
+$font-level-one-size:          36pt;
+$font-level-one-weight:        700;
+
+$font-level-two-size:          20pt;
+$font-level-two-weight:        700;
+
+$font-level-three-size:        20pt;
+$font-level-three-weight:      100;
+
+$font-level-four-size:         12pt;
+$font-level-four-weight:       300;
+
+$font-level-five-size:         8pt;
+$font-level-five-weight:       300;
+
+$font-level-six-size:          8pt;
+$font-level-six-weight:        700;
+
+$font-paragraph-size:          12pt;
+$font-paragraph-weight:        300;
+
+// Breakpoints
+
+$breakpoint-small:        32em;
+$breakpoint-medium:       48em;
+$breakpoint-large:        75em;
+
+// Measurements
+
+// Misc

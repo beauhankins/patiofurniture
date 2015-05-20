@@ -1,0 +1,44 @@
+%section#body-test
+  .inner-container-thin
+    %h1 What is this
+    %p
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nihil animi vero autem quia facere doloribus.
+      %a{:href=>"http://beauhankins.com", :target=>"_newtab"}= "beauhankins.com"
+    %br
+    %h1 Filter by Tag
+    %p
+      %a{:href=>"javascript:void(0)"}= "Aberhausen Ltd"
+      ,
+      %a{:href=>"javascript:void(0)"}= "Cavel Mountain Engineering"
+      ,
+      %a{:href=>"javascript:void(0)"}= "Firestone 2014"
+      ,
+      %a{:href=>"javascript:void(0)"}= "Heathsmith Tailors"
+      ,
+      %a{:href=>"javascript:void(0)"}= "Loaves & Diamond"
+      ,
+      %a{:href=>"javascript:void(0)"}= "Norse"
+      ,
+      %a{:href=>"javascript:void(0)"}= "Pistol & Quilt"
+      ,
+      %a{:href=>"javascript:void(0)"}= "The WoodHill Supply"
+
+%section#image-grid
+  .inner-container
+    #grid.masonry.js-masonry
+      .grid-item
+        %img{:src=>"http://placehold.it/187x298"}
+      .grid-item
+        %img{:src=>"http://placehold.it/700x400"}
+      .grid-item
+        %img{:src=>"http://placehold.it/300x300"}
+      .grid-item
+        %img{:src=>"http://placehold.it/150x100"}
+      .grid-item
+        %img{:src=>"http://placehold.it/187x238"}
+      .grid-item
+        %img{:src=>"http://placehold.it/500x400"}
+      .grid-item
+        %img{:src=>"http://placehold.it/400x400"}
+      .grid-item
+        %img{:src=>"http://placehold.it/200x150"}

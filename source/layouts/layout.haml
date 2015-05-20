@@ -4,8 +4,24 @@
     %title p a t i o &nbsp; f u r n i t u r e
 
     %meta{:charset=>"utf-8"}
-    %meta{:content=>'"IE=edge,chrome=1" http-equiv="X-UA-Compatible"'}
+    %meta{:name=>"viewport", :content=>"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"}
+    
+    / Stylesheets
+    = stylesheet_link_tag "all", "plugins/normalize"
 
-    = stylesheet_link_tag "all", "normalize"
+    / Javascripts
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"}
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.js"}
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js"}
+    = javascript_include_tag "all"
+
+    / Typekit
+    %script{:src => "//use.typekit.net/khz1cqe.js"}
+    %script{:type => "text/javascript"} try{Typekit.load();}catch(e){}
+
+    / Assets
+    %link{:rel => "icon", :type => "image/ico", :href => "/images/favicon.ico"}
   %body
+    %header#header
+      .logo
     = yield

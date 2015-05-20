@@ -1,0 +1,11 @@
+.grid-item {
+  float: left;
+  padding: 0.5em;
+  box-sizing: border-box;
+  width: calc(100% / 3);
+
+  @media screen and (max-width: $breakpoint-medium) { width: calc(100% / 2) }
+  @media screen and (max-width: $breakpoint-small) { width: 100% }
+
+  img { width: 100%; }
+}
