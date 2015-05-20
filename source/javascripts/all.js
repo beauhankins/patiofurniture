@@ -10,3 +10,15 @@ $(function() {
     });
   });
 });
+
+function filterTag(tag) {
+  if (tag == "all") {
+    $('.grid-item').show();
+  } else {
+    $('.grid-item').hide();
+    $('.grid-item.tag-'+tag+'').show();
+  }
+  
+  $("#grid").masonry('destroy'); 
+  $("#grid").masonry();
+}

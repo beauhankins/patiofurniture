@@ -1,44 +1,23 @@
-%section#body-test
+%section#intro
   .inner-container-thin
     %h1 What is this
     %p
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nihil animi vero autem quia facere doloribus.
-      %a{:href=>"http://beauhankins.com", :target=>"_newtab"}= "beauhankins.com"
+      Patio Furniture is a project by 
+      %a{:href=>"http://beauhankins.com", :target=>"_newtab"}<= "Beau Hankins"
+      %span>= ". It is currently a visual art diary of miscellaneous experiments."
     %br
     %h1 Filter by Tag
     %p
-      %a{:href=>"javascript:void(0)"}= "Aberhausen Ltd"
+      %a{:href=>"#all",:onclick=>"filterTag('all');return false;"}= "All"
       ,
-      %a{:href=>"javascript:void(0)"}= "Cavel Mountain Engineering"
+      %a{:href=>"#experiments",:onclick=>"filterTag('experiments');return false;"}= "Experiments"
       ,
-      %a{:href=>"javascript:void(0)"}= "Firestone 2014"
-      ,
-      %a{:href=>"javascript:void(0)"}= "Heathsmith Tailors"
-      ,
-      %a{:href=>"javascript:void(0)"}= "Loaves & Diamond"
-      ,
-      %a{:href=>"javascript:void(0)"}= "Norse"
-      ,
-      %a{:href=>"javascript:void(0)"}= "Pistol & Quilt"
-      ,
-      %a{:href=>"javascript:void(0)"}= "The WoodHill Supply"
+      %a{:href=>"#patio-furniture",:onclick=>"filterTag('patio-furniture');return false;"}= "Patio Furniture"
 
 %section#image-grid
   .inner-container
     #grid.masonry.js-masonry
-      .grid-item
-        %img{:src=>"http://placehold.it/187x298"}
-      .grid-item
-        %img{:src=>"http://placehold.it/700x400"}
-      .grid-item
-        %img{:src=>"http://placehold.it/300x300"}
-      .grid-item
-        %img{:src=>"http://placehold.it/150x100"}
-      .grid-item
-        %img{:src=>"http://placehold.it/187x238"}
-      .grid-item
-        %img{:src=>"http://placehold.it/500x400"}
-      .grid-item
-        %img{:src=>"http://placehold.it/400x400"}
-      .grid-item
-        %img{:src=>"http://placehold.it/200x150"}
+      .grid-item{:class=>"tag-experiments"}
+        = image_tag 'in-frequency.png'
+      .grid-item{:class=>"tag-patio-furniture"}
+        = image_tag 'pflogo-process.png'
