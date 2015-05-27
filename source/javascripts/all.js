@@ -11,12 +11,9 @@ $(function() {
   });
 
   $('a.select-tag').click(function() {
-    $('a.select-tag').css ({
-      "background": "none"
-    });
-    $(this).css({
-      "background": "#00f"
-    });
+    $('a.select-tag').removeClass("active");
+    $(this).addClass("active");
+    filterTag($(this).data("tag"));
   });
 });
 

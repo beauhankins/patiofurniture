@@ -8,11 +8,11 @@
     %br
     %h1 Filter by Tag
     %p
-      %a.select-tag{:href=>"#all",:onclick=>"filterTag('all');return false;"}= "All"
+      %a.select-tag.active{:href=>"#all", :data => {:tag => "all"}}= "All"
       ,
-      %a.select-tag{:href=>"#experiments",:onclick=>"filterTag('experiments');return false;"}= "Experiments"
+      %a.select-tag{:href=>"#experiments", :data => {:tag => "experiments"}}= "Experiments"
       ,
-      %a.select-tag{:href=>"#patio-furniture",:onclick=>"filterTag('patio-furniture');return false;"}= "Patio Furniture"
+      %a.select-tag{:href=>"#patio-furniture", :data => {:tag => "patio-furniture"}}= "Patio Furniture"
 
 %section#image-grid
   .inner-container
