@@ -61,6 +61,13 @@ header#header {
   background-position: center;
   background-repeat: no-repeat; }
 
+/* line 1, /Users/beauhankins/Development/Web/patiofurniture/source/stylesheets/components/_tags.scss */
+.select-tag {
+  background: none; }
+  /* line 4, /Users/beauhankins/Development/Web/patiofurniture/source/stylesheets/components/_tags.scss */
+  .select-tag.active {
+    background: #00f; }
+
 /* Layouts */
 /* line 1, /Users/beauhankins/Development/Web/patiofurniture/source/stylesheets/layouts/_grid.scss */
 .grid-item {
